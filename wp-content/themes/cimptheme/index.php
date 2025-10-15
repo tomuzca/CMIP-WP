@@ -3,7 +3,7 @@
   <div class="page-banner">
       <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/wip.png') ?>);"></div>
       <div class="page-banner__content container t-center c-white">
-        <h1 class="headline headline--large">CMIP LLC</h1>
+        <h1 class="headline headline--large">CMIP</h1>
         <h2 class="headline headline--medium">Engineering & Construction</h2></br>
         <h3 class="headline headline--small">'A' Licensed General Engineering Contractor Company </br>'B' Licensed General Builder Contractor Company </h3>
         <h3 class="headline headline--small">California CSLB# 1115725</h3>
