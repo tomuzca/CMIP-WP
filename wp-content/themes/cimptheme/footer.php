@@ -3,9 +3,9 @@
         <div class="group">
           <div class="site-footer__col-one">
             <h1 class="school-logo-text school-logo-text--alt-color">
-              <a href="#"><strong>Fictional</strong> University</a>
+              <a href="<?php echo site_url('/home') ?>" style="background-image: url('<?php echo get_theme_file_uri('/images/logo.png') ?>'); background-size: contain; background-repeat: no-repeat; background-position: center; display: block; width: 200px; height: 80px; text-indent: -9999px;"></a>
             </h1>
-            <p><a class="site-footer__link" href="#">555.555.5555</a></p>
+            <p><a class="site-footer__link" style= "background-position: center;">190 Sierra Court suite b113,</br> Palmdale, CA, </br>93550, USA</a></p>
           </div>
 
           <div class="site-footer__col-two-three-group">
@@ -13,21 +13,11 @@
               <h3 class="headline headline--small">Explore</h3>
               <nav class="nav-list">
                 <ul>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Programs</a></li>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#">Campuses</a></li>
-                </ul>
-              </nav>
-            </div>
-
-            <div class="site-footer__col-three">
-              <h3 class="headline headline--small">Learn</h3>
-              <nav class="nav-list">
-                <ul>
-                  <li><a href="#">Legal</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Careers</a></li>
+                  <li><a href="<?php echo site_url('/about-us') ?>">About Us</a></li>
+                  <li><a href="<?php echo site_url('/services') ?>">Services</a></li>
+                  <li><a href="<?php echo site_url('/work-with-us') ?>">Work with us</a></li>
+                  <li><a href="<?php echo site_url('/subcontract') ?>">Subcontractors & Partners</a></li>
+                  <li><a href="<?php echo site_url('/contact-us') ?>">Contact Us</a></li>
                 </ul>
               </nav>
             </div>
@@ -37,21 +27,20 @@
             <h3 class="headline headline--small">Connect With Us</h3>
             <nav>
               <ul class="min-list social-icons-list group">
-                <li>  <a href="https://www.facebook.com"  class="social-color-facebook" target="_blank"  rel="noopener noreferrer">
+                <li><a href="https://www.facebook.com" class="social-color-facebook" target="_blank" rel="noopener noreferrer">
                 <i class="fa fa-facebook" aria-hidden="true"></i></a>
                 </li>
-
                 <li>
-                  <a href="https://www.x.com" class="social-color-twitter" target="_blank"  rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="https://www.x.com" class="social-color-twitter" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                  <a href="https://www.youtube.com" class="social-color-youtube" target="_blank"  rel="noopener noreferrer"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                  <a href="https://www.youtube.com" class="social-color-youtube" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com" class="social-color-linkedin" target="_blank"  rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  <a href="https://www.linkedin.com" class="social-color-linkedin" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com" class="social-color-instagram" target="_blank"  rel="noopener noreferrer"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  <a href="https://www.instagram.com" class="social-color-instagram" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 </li>
               </ul>
             </nav>
