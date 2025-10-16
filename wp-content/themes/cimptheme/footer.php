@@ -12,13 +12,18 @@
             <div class="site-footer__col-two">
               <h3 class="headline headline--small">Explore</h3>
               <nav class="nav-list">
-                <ul>
+                <?php
+                wp_nav_menu(array(
+                'theme_location' =>'footerLocationOne'
+              ));
+              ?>
+                <!-- <ul>
                   <li><a href="<?php echo site_url('/about-us') ?>">About Us</a></li>
                   <li><a href="<?php echo site_url('/services') ?>">Services</a></li>
                   <li><a href="<?php echo site_url('/work-with-us') ?>">Work with us</a></li>
                   <li><a href="<?php echo site_url('/subcontract') ?>">Subcontractors & Partners</a></li>
                   <li><a href="<?php echo site_url('/contact-us') ?>">Contact Us</a></li>
-                </ul>
+                </ul> -->
               </nav>
             </div>
           </div>

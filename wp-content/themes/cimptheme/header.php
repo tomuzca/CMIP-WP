@@ -15,13 +15,19 @@
         <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
         <div class="site-header__menu group">
           <nav class="main-navigation">
-            <ul>
+            <?php
+              wp_nav_menu(array(
+                'theme_location' =>'headerMenuLocation'
+              ));
+              ?>
+            <!-- <ul>
               <li><a href="<?php echo site_url ('/about-us') ?>">About Us</a></li>
               <li><a href="<?php echo site_url ('/services') ?>">Services</a></li>
               <li><a href="<?php echo site_url ('/work-with-us') ?>">Work with us</a></li>
               <li><a href="<?php echo site_url ('/subcontract') ?>">Subcontractors & Partners</a></li>
               <li><a href="<?php echo site_url ('/contact-us') ?>">Contact Us</a></li>
             </ul>
+            -->
           </nav>
           <div class="site-header__util">
             <a href="#" class="btn btn--small btn--orange float-left push-right">Login</a>
