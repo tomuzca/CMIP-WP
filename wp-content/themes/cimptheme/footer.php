@@ -18,12 +18,26 @@
               ));
               ?>
                 <!-- <ul>
-                  <li><a href="<?php echo site_url('/about-us') ?>">About Us</a></li>
-                  <li><a href="<?php echo site_url('/services') ?>">Services</a></li>
-                  <li><a href="<?php echo site_url('/work-with-us') ?>">Work with us</a></li>
-                  <li><a href="<?php echo site_url('/subcontract') ?>">Subcontractors & Partners</a></li>
-                  <li><a href="<?php echo site_url('/contact-us') ?>">Contact Us</a></li>
-                </ul> -->
+                  <li <?php if(is_page('about-us')) echo'class="current-menu-item"'?>>
+                      <a href="<?php echo site_url('/about-us') ?>">About Us</a>
+                  </li>
+                  
+                  <li <?php if(is_page('services')) echo'class="current-menu-item"'?>
+                      <a href="<?php echo site_url('/services') ?>">Services</a>
+                  </li>
+                  
+                  <li<?php if(is_page('work-with-us')) echo'class="current-menu-item"'?>
+                      <a href="<?php echo site_url('/work-with-us') ?>">Work with us</a>
+                  </li>
+                  
+                  <li <?php if(is_page('subcontractor')) echo'class="current-menu-item"'?>
+                    <a href="<?php echo site_url('/subcontract') ?>">Subcontractors & Partners</a>
+                  </li>
+                  
+                  <li<?php if(is_page('contact-us')) echo'class="current-menu-item"'?>
+                    <a href="<?php echo site_url('/contact-us') ?>">Contact Us</a>
+                  </li>
+                </ul>-->
               </nav>
             </div>
           </div>
