@@ -2,6 +2,8 @@
 
 function projects_post_types() {
   register_post_type('projects', array(
+    'rewrite' => array('slug' => 'projects'),
+    'has_archive' => true,
     'public' => true,
     'show_in_rest' => true,
     'labels' => array(
