@@ -18,13 +18,31 @@
       <div class="full-width-split__one">
         <div class="full-width-split__inner">
           <h2 class="headline headline--small-plus t-center">Licenses & Certifications</h2>
-
+          <!--<?php /*
+          $homepageEvents = new WP_Query(array(
+            'posts_per_page' => 2,
+            'post_type' => 'event'
+          ));
+          while($homepageEvents->have_posts()) {
+            $homepageEvents->the_post(); ?>
+            <div class="event-summary">
+              <a class="event-summary__date t-center" href="#">
+                <span class="event-summary__month">Mar</span>
+                <span class="event-summary__day">25</span>  
+              </a>
+              <div class="event-summary__content">
+                <h5 class="event-summary__title headline headline--tiny"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                <p><?php echo wp_trim_words(get_the_content(), 18); ?> <a href="<?php the_permalink(); ?>" class="nu gray">Learn more</a></p>
+              </div>
+            </div>
+          <?php }
+        */?>-->
           <div class="event-summary">
             <div class="event-summary__content">
               <h5 class="event-summary__title headline headline--tiny"><a href="#">CMIP LLC is licensed by the California 's Contractors State License Board as:</a></h5>
               <p><strong>Class A General Engineering Contractor License</strong> and <strong>Class B General Builder Contractor License.</strong></p>
             </div>
-          </div>
+          </div> -->
           <div class="event-summary">           
             <div class="event-summary__content">
               <p>Also, the company is a Certified Small Business Entity by the SBA, the DGS, the Los Angeles County and the Port of Long Beach.</p>
