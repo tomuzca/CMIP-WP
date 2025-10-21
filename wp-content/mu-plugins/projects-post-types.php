@@ -3,6 +3,8 @@
 function project_post_types() {
   //Project post type
   register_post_type('project', array(
+    'show_in_rest' => true,
+    'supports'=> array('title', 'editor', 'excerpt'),
     'rewrite' => array('slug' => 'projects'),
     'has_archive' => true,
     'public' => true,
@@ -25,12 +27,20 @@ function project_post_types() {
     'has_archive' => true,
     'public' => true,
     'labels' => array(
-      'name' => 'Programs',
+      'name' => 'Trades',
       'add_new_item' => 'Add New Trade',
       'edit_item' => 'Edit Trade',
       'all_items' => 'All Trades',
       'singular_name' => 'Trade'
     ),
-    'menu_icon' => 'dashicons-awards'
+    'menu_icon' => 'dashicons-editor-ul'
   ));
 }
+
+
+
+
+add_action('init', 'project_post_types');
+
+
+?>
