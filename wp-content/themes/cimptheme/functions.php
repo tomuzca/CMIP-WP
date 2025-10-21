@@ -18,8 +18,30 @@ function project_features() {
 
 add_action('after_setup_theme', 'project_features');
 
+function project_adjust_queries($query) {
+  if (!is_admin() AND is_post_type_archive('trade') AND $query->is_main_query()) {
+    $query->set('orderby', 'title');
+    $query->set('order', 'ASC');
+    $query->set('posts_per_page', -1);
+  }
 
+  if (!is_admin() AND is_post_type_archive('project') AND $query->is_main_query()) {
+    $today = date('Ymd');
+    $query->set('meta_key', 'project_date');
+    $query->set('orderby', 'meta_value_num');
+    $query->set('order', 'ASC');
+    $query->set('meta_query', array(
+              array(
+                'key' => 'project_date',
+                'compare' => '>=',
+                'value' => $today,
+                'type' => 'numeric'
+              )
+            ));
+  }
+}
 
+add_action('pre_get_posts', 'project_adjust_queries');
 
 
 ?>
