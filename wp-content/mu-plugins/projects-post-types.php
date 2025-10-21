@@ -1,8 +1,9 @@
 <?php
-// Event Post Type
+
 function project_post_types() {
-  register_post_type('projects', array(
-    'rewrite' => array('slug' => 'project'),
+  //Project post type
+  register_post_type('project', array(
+    'rewrite' => array('slug' => 'projects'),
     'has_archive' => true,
     'public' => true,
     'show_in_rest' => true,
@@ -16,7 +17,7 @@ function project_post_types() {
     'menu_icon' => 'dashicons-open-folder'
   ));
 
-  // Trade Post Type
+// Trade Post Type
   register_post_type('trade', array(
     'show_in_rest' => true,
     'supports' => array('title', 'editor'),
@@ -33,8 +34,3 @@ function project_post_types() {
     'menu_icon' => 'dashicons-awards'
   ));
 }
-
-add_action('init', 'project_post_types');
-
-
-?>
