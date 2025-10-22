@@ -18,7 +18,7 @@ function project_features() {
 
 add_action('after_setup_theme', 'project_features');
 
-function project_adjust_queries($query) {
+/* function project_adjust_queries($query) {
   if (!is_admin() AND is_post_type_archive('trade') AND $query->is_main_query()) {
     $query->set('orderby', 'title');
     $query->set('order', 'ASC');
@@ -42,6 +42,6 @@ function project_adjust_queries($query) {
 }
 
 add_action('pre_get_posts', 'project_adjust_queries');
-
+*/
 
 ?>
