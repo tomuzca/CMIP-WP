@@ -11,7 +11,7 @@ get_header(); ?>
   <div class="page-banner__content container container--narrow">
     <h1 class="page-banner__title">Past Projects</h1>
     <div class="page-banner__intro">
-      <p>Old Projects</p>
+      <p>Past Projects</p>
     </div>
   </div>  
 </div>
@@ -24,12 +24,12 @@ get_header(); ?>
         'paged'=>get_query_var('paged', 1),
         //'posts_per_page' => 1,
         'post_type' => 'project',
-        'meta_key' => 'project_due_date',
+        'meta_key' => 'Project_Due_date',
         'orderby' => 'meta_value_num',
         'order' => 'ASC',
         'meta_query' => array(
             array(
-                'key' => 'project_due_date',
+                'key' => 'Project_Due_date',
                 'compare' => '<',
                 'value' => $today,
                 'type' => 'numeric'
