@@ -3,7 +3,7 @@
         <div class="group">
           <div class="site-footer__col-one">
             <h1 class="school-logo-text school-logo-text--alt-color">
-              <a href="<?php echo site_url('/home') ?>" style="background-image: url('<?php echo get_theme_file_uri('/images/logo.png') ?>'"); background-size: contain; background-repeat: no-repeat; background-position: center; display: block; width: 200px; height: 80px; text-indent: -9999px;"></a>
+              <a href="<?php echo site_url('/home') ?>" style="background-image: url('<?php echo get_theme_file_uri('/images/logo.png') ?>'); background-size: contain; background-repeat: no-repeat; background-position: center; display: block; width: 200px; height: 80px; text-indent: -9999px;"></a>
             </h1>
             <p><a style="background-position: center;">190 Sierra Court suite b113,</br> Palmdale, CA, </br>93550, USA</a></p>
           </div>
