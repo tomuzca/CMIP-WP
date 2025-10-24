@@ -5,7 +5,7 @@ function project_post_types() {
   register_post_type('project', array(
     'show_in_rest' => true,
     'supports'=> array('title', 'editor', 'excerpt'),
-    'rewrite' => array('slug' => 'projects'),
+    'rewrite' => array('slug' => 'projects '),
     'has_archive' => true,
     'public' => true,
     'show_in_rest' => true,
@@ -35,7 +35,25 @@ function project_post_types() {
     ),
     'menu_icon' => 'dashicons-editor-ul'
   ));
+
+  // admin Post Type
+  register_post_type('admin', array(
+    'show_in_rest' => true,
+    'supports' => array('title', 'editor'),
+    'public' => true,
+    'labels' => array(
+      'name' => 'admins',
+      'add_new_item' => 'Add New admin',
+      'edit_item' => 'Edit admin',
+      'all_items' => 'All admins',
+      'singular_name' => 'admin'
+    ),
+    'menu_icon' => 'dashicons-welcome-learn-more'
+  ));
 }
+
+
+
 
 
 
